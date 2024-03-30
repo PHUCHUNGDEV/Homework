@@ -7,7 +7,7 @@ class BookManager {
         documentList.add(document)
     }
 
-    fun removeDocument(documentID: String){
+    private fun removeDocument(documentID: String){
         val iterator = documentList.iterator()
         while (iterator.hasNext()){
             val document = iterator.next()
@@ -31,7 +31,7 @@ class BookManager {
         val searchList = documentList.filter {it:: class.simpleName == type}
         if (documentList.isNotEmpty()){
             println("Danh sách: ")
-            for (document in documentList){
+            for (document in searchList){
                 document.showInf()
                 println()
             }
