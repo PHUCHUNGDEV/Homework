@@ -4,7 +4,7 @@ package com.hung.homework6.ex3
 
 fun main() {
     val bookManager = BookManager()
-    println("---------------MENU----------")
+    println("---------------MENU--------------")
     println("Chọn thao tác cần thực hiện: ")
     println("1: Them moi tai lieu")
     println("2: Quan li tai lieu")
